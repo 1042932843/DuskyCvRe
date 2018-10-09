@@ -7,9 +7,9 @@ demo链接： https://fir.im/sgwa
 然后！新构建了项目：DuskyWorld
 效果图:
 
-<img src="https://github.com/1042932843/img-folder/blob/master/duskycv_downlod.png" width="600" /> 
+<img src="https://github.com/1042932843/img-folder/blob/master/duskycv_downlod.png" width="360" /> 
+<img src="https://github.com/1042932843/img-folder/blob/master/S81009-115051.jpg" width="120" /> 
+<img src="https://github.com/1042932843/img-folder/blob/master/S81009-115109.jpg" width="120" /> 
+<img src="https://github.com/1042932843/img-folder/blob/master/S81009-115117.jpg" width="120" /> 
 
-![Image text](https://github.com/1042932843/img-folder/blob/master/duskycv_downlod.png)
-![Image text](https://github.com/1042932843/img-folder/blob/master/S81009-115051.jpg)
-![Image text](https://github.com/1042932843/img-folder/blob/master/S81009-115109.jpg)
-![Image text](https://github.com/1042932843/img-folder/blob/master/S81009-115117.jpg)
+<!--![Image text](https://github.com/1042932843/img-folder/blob/master/S81009-115117.jpg)-->
