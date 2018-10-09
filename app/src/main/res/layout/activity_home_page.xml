@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nbsix.com.duskycvre.Module.HomePage.HomePageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleEnabled="false"
+            app:contentScrim="@color/mygray"
+            app:statusBarScrim="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+            <nbsix.com.duskycvre.Design.starView.BackgroundView
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="match_parent" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_height"
+                android:layout_marginTop="?attr/actionBarSize"
+                >
+                <nbsix.com.duskycvre.Design.imagecoverflow.CoverFlowView
+                    android:id="@+id/coverflow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:coverflowGravity="center_vertical"
+                    app:coverflowLayoutMode="wrap_content"
+                    app:reflectionGap="@dimen/padding4dp"
+                    app:reflectionHeight="25%"
+                    app:visibleImage="3" />
+
+               <!-- <nbsix.com.duskycvre.Design.filterMenuLayout.FilterMenuLayout
+                    android:id="@+id/filter_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:fm_expandedRadius="108dp"
+                    app:fm_collapsedRadius="24dp"
+                    app:fm_centerHorizontal="true"
+                    app:fm_centerBottom="48dp"
+                    app:fm_primaryColor="@color/black_alpha_30"
+                    app:fm_primaryDarkColor="@color/black_alpha_45">
+                </nbsix.com.duskycvre.Design.filterMenuLayout.FilterMenuLayout>-->
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/common_margin16"
+                    android:layout_marginEnd="@dimen/common_margin16"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/group_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/user_avatar"
+                            android:layout_width="@dimen/user_avatar_size"
+                            android:layout_height="@dimen/user_avatar_size"
+                            android:layout_margin="@dimen/user_avatar_margin_large"
+                            android:src="@drawable/ic_user_default"/>
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/user_avatar_margin_large"
+                            android:layout_marginStart="@dimen/user_avatar_margin_large"
+                            android:minWidth="@dimen/user_name_min_width"
+                            android:textSize="@dimen/textsize14sp"
+                            android:textColor="@color/gray_20"
+                            android:text="@string/not_logged_in"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/toolbar_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/toolbar_more"
+                        />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/toolbar_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_height"
+            android:layout_marginBottom="@dimen/padding4dp"
+            android:layout_marginLeft="@dimen/common_margin16"
+            android:layout_marginRight="@dimen/common_margin16"
+            android:layout_marginTop="@dimen/padding4dp"
+            android:background="@drawable/bg_round_corner_line_gray"
+            android:fillViewport="false"
+            app:layout_scrollFlags="scroll"
+            app:tabSelectedTextColor="#529ecc"
+            app:tabTextColor="@color/gray_20" />
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            />
+    </FrameLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

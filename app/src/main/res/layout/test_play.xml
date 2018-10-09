@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dsy="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="@dimen/app_bar_default_elevation">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:titleTextAppearance="@style/ToolBar.TitleText" />
+
+        </android.support.design.widget.AppBarLayout>
+
+    </LinearLayout>
+
+    <nbsix.com.duskycvre.Design.test.shotView
+        android:id="@+id/shotView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"/>
+
+    <com.nbsix.dsy.bannerview.BannerView
+        android:id="@+id/banner"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        dsy:BannerView_interval="1000"
+        dsy:BannerView_indicatorDisplayed="true"
+        dsy:BannerView_slideSpeed="1.0"
+        dsy:BannerView_orientation="0"
+        dsy:BannerView_indicatorMargin="2dp"
+        dsy:BannerView_auto="false"
+        dsy:BannerView_spacing="16dp"
+        dsy:BannerView_centerScale="1.2"
+        />
+
+</LinearLayout>

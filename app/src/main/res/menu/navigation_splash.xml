@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_register"
+            android:checked="true"
+            android:title="@string/register" />
+
+        <item
+            android:id="@+id/item_strat"
+            android:title="@string/start" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/group_user"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_news"
+            android:title="@string/news" />
+
+        <item
+            android:id="@+id/item_anime"
+            android:title="@string/anime" />
+
+        <item
+            android:id="@+id/item_games"
+            android:title="@string/games" />
+
+        <item
+            android:id="@+id/item_blog"
+            android:title="@string/blog" />
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_complaints"
+            android:title="@string/complaints" />
+
+
+    </group>
+
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/duskydialog_bg"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:textColor="#38ADFF"
+            android:textSize="@dimen/textsize16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D7D7D7"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:padding="15dp">
+            <nbsix.com.duskycvre.Design.progressView.CircleProgressView
+                android:id="@+id/load_pro"
+                android:layout_width="@dimen/dialogloading_circle_progress_size"
+                android:layout_height="@dimen/dialogloading_circle_progress_size"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:matProg_barColor="#38ADFF"
+                app:matProg_barWidth="@dimen/dialogloading_circle_progress_width"
+                app:matProg_progressIndeterminate="true" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">肥宅公墓</string>
+    <string name="Start">Start</string>
+    <string name="view">浏览</string>
+    <string name="search">搜索</string>
+    <string name="comments">评论</string>
+
+    <string name="register">新手上路</string>
+    <string name="start">弹射起步</string>
+    <string name="news">NEWS</string>
+    <string name="anime">ANIME</string>
+    <string name="games">GAMES</string>
+    <string name="blog">BLOG</string>
+    <string name="complaints">大魔王TT</string>
+
+    <string name="load_more">加载中…</string>
+
+    <string name="tip">没有钱啊,肯定要做啊,不做没有钱用,打工是不可能打工的,这辈子不可能打工的,做生意又不会做,就是写这种东西,才能维持的了生活这样子…</string>
+
+    <string name="direct_messages">私信</string>
+    <string name="get_in">上车</string>
+    <string name="login_">登录</string>
+    <string name="login_error">无法登录?</string>
+    <string name="register_">申请注册</string>
+    <string name="not_logged_in">未登录</string>
+    <string name="user_agreement">用户协议</string>
+
+    <string name="username">用户名/邮箱/手机号</string>
+    <string name="password">密码</string>
+    <string name="lv">Lv.0</string>
+    <string name="dsy">大家好！因为是第一期视频所以简单的介绍下自己，我是二娃。其实我爸妈就生了我一个，我应该是大娃才对。但周围的基友叫习惯了。总之，以后请各位姥爷多关照了。</string>
+
+    <!-- 音乐播放面板 -->
+    <string name="not_applicable">N/A</string>
+    <string name="time_def">--:--</string>
+</resources>
